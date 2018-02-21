@@ -1,13 +1,12 @@
 # Docker-node-serverless
 
-[![Dockerhub badge](http://dockeri.co/image/jch254/docker-node-serverless)](https://hub.docker.com/r/jch254/docker-node-serverless)
+[![Dockerhub badge](http://dockeri.co/image/hatchteam/serverless-node-deploy-aws)](https://hub.docker.com/r/hatchteam/serverless-node-deploy-aws)
 
-Docker-powered build/deployment environment for Serverless projects. This Docker image is intended for use with [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) and [AWS CodeBuild](https://aws.amazon.com/codebuild).
+Docker-powered build/deployment environment for Serverless projects. This Docker image is intended for use with CI/CD tools such as CircleCI.
 
-See [serverless-node-dynamodb-api](https://github.com/jch254/serverless-node-dynamodb-api) for an example of this image in action.
 
 ---
 
-This image is based on node:6.10.0-alpine ([AWS Lambda uses Node v6.10.0](http://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html)) and has the AWS CLI, Serverless v1.25.0 and Yarn installed.
+This image is based on node:6.10.3-alpine ([AWS Lambda uses Node v6.10.3](http://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html)) and has the AWS CLI.
 
-To deploy a Serverless service to AWS you will need to create an IAM user with the required permissions and set credentials. I'm setting credentials using [Bitbucket Pipelines environment variables](https://confluence.atlassian.com/bitbucket/environment-variables-in-bitbucket-pipelines-794502608.html); however setting credentials in Dockerfile is also possible.
+Serverless should be used from the building project node_modules.
