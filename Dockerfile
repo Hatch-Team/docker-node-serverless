@@ -7,6 +7,8 @@ RUN apk add --no-cache \
     groff \
     less \
     bash \
+    openssh \
+    git \
   && pip install --no-cache-dir --upgrade pip awscli
 
 ENV NODE_ENV development
