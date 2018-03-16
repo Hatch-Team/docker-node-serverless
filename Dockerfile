@@ -4,6 +4,7 @@ RUN apk add --no-cache \
     python \
     py-pip \
     ca-certificates \
+    postgresql \
     groff \
     less \
     bash \
