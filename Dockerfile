@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     openssh \
     git \
   && pip install --no-cache-dir --upgrade pip awscli
-
+RUN npm install -g yarn
 ENV NODE_ENV development
 
 ENTRYPOINT ["/bin/bash", "-c"]
