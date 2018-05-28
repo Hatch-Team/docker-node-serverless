@@ -11,6 +11,6 @@ This image is based on node:6.10.3-alpine ([AWS Lambda uses Node v6.10.3](http:/
 
 Serverless should be used from the building project node_modules.
 
-docker build . -t hatchteam/serverless-node-deploy-aws -t hatchteam/serverless-node-deploy-aws:6.10
+docker build . -t hatchteam/serverless-node-deploy-aws -t hatchteam/serverless-node-deploy-aws:8.10
 docker push  hatchteam/serverless-node-deploy-aws
-docker push hatchteam/serverless-node-deploy-aws:6.10
+docker push hatchteam/serverless-node-deploy-aws:8.10
