@@ -7,6 +7,7 @@ RUN apk add --no-cache \
     groff \
     less \
     bash \
+    docker \
     openssh \
     git \
   && pip install --no-cache-dir --upgrade pip awscli
