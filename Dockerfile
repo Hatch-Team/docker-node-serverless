@@ -6,6 +6,8 @@ RUN apk add --no-cache \
     ca-certificates \
     groff \
     less \
+    jq \
+    curl \
     bash \
     docker \
     openssh \
