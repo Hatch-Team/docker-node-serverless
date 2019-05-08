@@ -11,6 +11,7 @@ RUN apk add --no-cache \
     bash \
     docker \
     openssh \
+    rsync \
     git \
   && pip install --no-cache-dir --upgrade pip awscli
 RUN apk add 'postgresql=9.5.13-r0' --update-cache --repository http://nl.alpinelinux.org/alpine/v3.4/main
